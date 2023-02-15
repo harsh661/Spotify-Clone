@@ -10,7 +10,7 @@ const Sidebar = () => {
   const { activeSong } = useSelector((state) => state.player)
   return (
     <>
-    <div className='md:bg-black bg-gradient-to-t from-[rgba(0,0,0)] via-[rgba(0, 0, 0, 0.9)] to-transparent md:w-60 w-full md:p-6 p-3 absolute md:relative z-20 bottom-0'>
+    <div className='md:bg-black bg-gradient-to-t from-[rgba(0,0,0)] via-[rgba(0, 0, 0, 0.9)] to-transparent md:w-60 w-full md:p-6 p-3 fixed md:relative z-20 bottom-0'>
       <div className='w-32 hidden md:flex'>
         <img src={logo} alt="Spotify" />
       </div>

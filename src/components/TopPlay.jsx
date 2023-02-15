@@ -55,7 +55,7 @@ const TopChartCard = ({ song, i, handlePauseClick, handlePlayClick, isPlaying, a
 }
 
   return (
-    <div ref={divRef} className="xl:ml-6 ml-0 xl:mb-0 mb-6 flex-1 xl:max-w-[500px] max-w-full flex flex-col">
+    <div ref={divRef} className="xl:ml-6 ml-0 xl:mb-0 mb-6 flex-1 xl:max-w-[500px] max-w-full flex flex-col pt-5">
       <div className="w-full flex flex-col">
         <div className="flex w-full items-center justify-between flex-row">
           <h2 className="text-white text-2xl font-bold">Top Plays</h2>

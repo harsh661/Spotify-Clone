@@ -6,6 +6,7 @@ const TopChart = () => {
     if(isFetching) return <Loader internal={true}/>
     if(error) return <Error internal={true}/>
 
+
   return (
     <>
         <div className='flex w-full items-center justify-between sm:flex-row flex-col mt-4 mb-10'>

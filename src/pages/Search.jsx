@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux"
 import { useParams } from "react-router-dom"
-import { Error, Loader, SongCard } from "../components"
+import { Error, Loader, SongCard, Searchbar } from "../components"
 import { useGetSearchItemsQuery } from "../redux/services/shazamCore"
 import { Link } from "react-router-dom"
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,8 +19,11 @@ const Search = () => {
   if(error) return <Error internal={true}/>
 
   return (
-    <div className="flex flex-col w-full">
-      <h2 className="text-white text-2xl font-bold my-5 flex-wrap flex">Here are the Results</h2>
+    <div className="flex flex-col w-full pt-10">
+      <div className="w-full absolute top-0 md:left-auto left-0">
+        <Searchbar/>
+      </div>
+      <h2 className="text-white text-2xl font-bold mt-10 mb-5 flex-wrap flex">Here are the Results</h2>
       <div >
         <div className="w-full flex flex-col mb-4">
           <Swiper

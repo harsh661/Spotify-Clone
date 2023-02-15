@@ -12,7 +12,7 @@ const Searchbar = () => {
   }
 
   return(
-    <form onSubmit={handleSubmit} className="p-2 relative text-gray-900 md:pl-5 w-full focus-within:text-gray-600 flex items-center justify-center md:justify-start my-2" autoComplete="off">
+    <form onSubmit={handleSubmit} className="p-2 bg-[#281111] fixed text-gray-900 md:pl-5 w-full focus-within:text-gray-600 flex items-center justify-center md:justify-start z-50" autoComplete="off">
       <div className="flex flex-row items-center bg-white max-w-[280px] lg:max-w-xl rounded-3xl">
         <FiSearch className="w-5 h-5 ml-4 absolute"/>
         <input
